@@ -9,61 +9,47 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="h-screen flex justify-center items-center text-center">
-      <div className="flex h-full w-full">
-        <div className="flex my-24 mx-20 flex-col justify-center">
-          <div className="flex justify-center">
-            <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-          </div>
-
-          <div>
-            <h1 className="mt-4 font-bold text-lg">Hello Again!</h1>
-            <h1>Welcome back</h1>
-          </div>
-
-          <div className="mt-10">
-            <div className="flex justify-center">
-              <Button variant="outline" className="p-6 mx-2">
+    <main className="flex h-full">
+      <div className="flex flex-1 justify-between bg-white border-62 border solid border-grigio">
+        <div className="flex justify-between flex-col text-center w-1/2">
+          <div className="flex h-5/6 items-center justify-center">
+            <div className="w-6/12">
+              <div className="flex justify-center">
                 <Avatar>
-                  <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQafX9X4oVKEEpBfQvuaw-VyYNuaYCyzhRwght_1_JfmA&s" />
-                  <AvatarFallback>G</AvatarFallback>
+                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarFallback></AvatarFallback>
                 </Avatar>
-                Continue whit Google
-              </Button>
-              <Button variant="outline" className="p-6 mx-2">
-                <Avatar>
-                  <AvatarImage src="https://www.facebook.com/images/fb_icon_325x325.png" />
-                  <AvatarFallback>FC</AvatarFallback>
-                </Avatar>
-              </Button>
-            </div>
-
-            <h1 className="m-2 text-xs">Or your Email</h1>
-          </div>
-
-          <div className="mt-12 flex flex-col justify-center items-center text-center">
-            <div className="felx justify-center w-2/3">
-              <div className="m-3">
-                <Input type="email" placeholder="Email" />
               </div>
-              <div className="m-3">
-                <Input type="password" placeholder="Password" />
+
+              <div className="text-center mt-8 mb-20">
+                <div className="font-bold text-lg">Hello Again!</div>
+                <div className="text-xs">Welcome Back</div>
+              </div>
+
+              <div>
+                <div className="m-3">
+                  <Input type="email" placeholder="Email" />
+                </div>
+                <div className="m-3">
+                  <Input type="password" placeholder="Password" />
+                </div>
+
+                <div className="flex justify-end">
+                  <Button variant="link" className="text-xs">
+                    Forgot Password?
+                  </Button>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button variant="secondary" className="w-full">
+                  Log in
+                </Button>
               </div>
             </div>
-
-            <div className="flex justify-end"></div>
-
-            <div className="m-3 w-max">
-              <Button variant="secondary" className="w-full">
-                Log in
-              </Button>
-            </div>
           </div>
 
-          <div className="text-right">
+          <div className="flex-1">
             <Button
               variant="link"
               className="text-xs"
@@ -74,7 +60,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-slate-300 w-1/2 h-ful"></div>
+        <div className="flex w-3/6 bg-qdrdestra"></div>
       </div>
     </main>
   );
