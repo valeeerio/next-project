@@ -12,8 +12,8 @@ export default function Home() {
     <main className="flex h-full">
       <div className="flex flex-1 justify-between bg-white border-62 border solid border-grigio">
         <div className="flex justify-between flex-col text-center w-1/2">
-          <div className="flex h-5/6 items-center justify-center">
-            <div className="w-6/12">
+          <div className="flex h-5/6 items-center justify-center overflow-auto">
+            <div className="max-h-full	">
               <div className="flex justify-center">
                 <Avatar>
                   <AvatarImage src="https://github.com/shadcn.png" />
@@ -28,28 +28,36 @@ export default function Home() {
 
               <div>
                 <div className="m-3">
-                  <Input type="email" placeholder="Email" />
+                  <Input type="email" placeholder="Email" className="w-64" />
                 </div>
                 <div className="m-3">
-                  <Input type="password" placeholder="Password" />
+                  <Input
+                    type="password"
+                    placeholder="Password"
+                    className="w-64"
+                  />
                 </div>
 
                 <div className="flex justify-end">
-                  <Button variant="link" className="text-xs">
+                  <Button
+                    variant="link"
+                    className="text-xs"
+                    onClick={() => router.push("/forgotPassword")}
+                  >
                     Forgot Password?
                   </Button>
                 </div>
               </div>
 
               <div className="mt-8">
-                <Button variant="secondary" className="w-full">
+                <Button variant="secondary" className="w-64">
                   Log in
                 </Button>
               </div>
             </div>
           </div>
 
-          <div className="flex-1">
+          <div className="flex flex-1 justify-center items-center">
             <Button
               variant="link"
               className="text-xs"
