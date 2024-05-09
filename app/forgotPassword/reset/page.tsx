@@ -24,14 +24,14 @@ export default function Page() {
               <h1 className="m-4 font-bold text-lg">Reset Password</h1>
 
               <div className="flex flex-col items-center">
-                <div className="mt-3">
+                <div className="mt-5">
                   <Input
                     type="password"
                     placeholder="New Password"
                     className="w-64"
                   />
                 </div>
-                <div className="mt-3">
+                <div className="mt-5">
                   <Input
                     type="password"
                     placeholder="Confirm Password"

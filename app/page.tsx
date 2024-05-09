@@ -61,7 +61,7 @@ export default function Home() {
             <Button
               variant="link"
               className="text-xs"
-              onClick={() => router.push("/registrati")}
+              onClick={() => router.push("/register")}
             >
               Register Now
             </Button>

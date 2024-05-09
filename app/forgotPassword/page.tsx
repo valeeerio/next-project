@@ -24,11 +24,13 @@ export default function Page() {
               <h1 className="m-4 font-bold text-lg">Forgot Password?</h1>
 
               <div className="flex flex-1 justify-center items-center">
-                <Input type="email" placeholder="Email" className="w-64" />
+                <div className="mt-5">
+                  <Input type="email" placeholder="Email" className="w-64" />
+                </div>
               </div>
             </div>
 
-            <div className="flex justify-center m-28">
+            <div className="flex justify-center mt-28">
               <Button
                 variant="secondary"
                 className="w-64"
