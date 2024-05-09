@@ -18,7 +18,6 @@ export default function Page() {
               Log in
             </Button>
           </div>
-
           <div className="flex-1 flex flex-col">
             <div className="flex flex-col m-8">
               <h1 className="m-4 font-bold text-lg">Register!</h1>
@@ -55,50 +54,11 @@ export default function Page() {
                   router.push("/");
                 }}
               >
-                Reset
+                Register Now
               </Button>
             </div>
           </div>
-
-          {/* <div className="flex-1 flex flex-col">
-            <div className="flex flex-col m-8">
-              <h1 className="m-4 font-bold text-lg">Register!</h1>
-
-              <div className="">
-                <div className="flex justify-center my-3">
-                  <Input type="text" placeholder="name" className="w-48" />
-                </div>
-
-                <div className="flex justify-center my-3">
-                  <Input type="text" placeholder="surname" className="w-48" />
-                </div>
-
-                <div className="flex justify-center my-3">
-                  <Input type="text" placeholder="username" className="w-48" />
-                </div>
-
-                <div className="flex justify-center my-3">
-                  <Input type="email" placeholder="email" className="w-48" />
-                </div>
-
-                <div className="flex justify-center my-3">
-                  <Input
-                    type="password"
-                    placeholder="password"
-                    className="w-48"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex justify-center mt-8">
-              <Button variant="secondary" className="w-64">
-                Register now
-              </Button>
-            </div>
-          </div> */}
         </div>
-
         <div className="flex w-3/6 bg-qdrdestra"></div>
       </div>
     </main>
