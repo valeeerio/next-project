@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex flex-1 justify-between bg-white border-62 border solid border-grigio">
         <div className="flex justify-between flex-col text-center w-1/2">
           <div className="flex h-5/6 items-center justify-center overflow-auto">
-            <div className="max-h-full	">
+            <div className="max-h-full">
               <div className="flex justify-center">
                 <Avatar>
                   <AvatarImage src="https://github.com/shadcn.png" />
