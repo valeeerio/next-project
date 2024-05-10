@@ -50,7 +50,13 @@ export default function Home() {
               </div>
 
               <div className="mt-8">
-                <Button variant="secondary" className="w-64">
+                <Button
+                  variant="secondary"
+                  className="w-64"
+                  onClick={() => {
+                    router.push("/dashboard");
+                  }}
+                >
                   Log in
                 </Button>
               </div>
